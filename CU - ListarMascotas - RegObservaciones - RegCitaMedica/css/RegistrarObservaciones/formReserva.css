@@ -1,0 +1,56 @@
+legend {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 30px;
+    background-color: transparent;
+}
+
+.formularioReserva {
+    justify-content: center;
+    align-items: center;
+    width: 487px;
+    background-color: #355764;
+    margin: auto;
+    padding: 40px 19px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.formularioReserva .flexContent {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.formularioReserva .flexContent label {
+    text-align: left;
+    font-size: 16px;
+    padding: 2%;
+    color: #fff;
+}
+
+.formularioReserva .flexContent .casillas_formulario {
+    width: 60%;
+    background-color: #fff;
+    color: black;
+    padding: 1%;
+    margin: 2% 0;
+}
+
+#pHabitacion {
+    width: 62.5%;
+}
+
+#pComentario {
+    background-color: #fff;
+    padding: 1%;
+    margin: 2% 0;
+    width: 98%;
+}
+
+#msg {
+    text-align: left;
+    color: #ffc79f;
+    font-size: 14px;
+}

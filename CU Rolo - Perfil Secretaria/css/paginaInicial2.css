@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5em
+}
+
+b {
+    font-weight: bold;
+}
+
+.admin-usuarios {
+    display: flex;
+    align-items: row;
+    /*background: #58A082;*/
+}
+
+.nav-izquierdo {
+    /*border: dotted red 1px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #56a081;*/
+    padding: 25px;
+    /*border-right: black solid 2px;*/
+}
+
+.nav-izquierdo h2 {
+    border-bottom: black solid 2px;
+}
+
+.nav-izquierdo a {
+    text-align: center;
+}
+
+.menu-derecho {
+    width: 100%;
+}
+
+.reglas-pw {
+    /*border: dotted red 1px;*/
+    margin-left: 25px;
+    /*width: 450px;*/
+    text-align: left;
+}
+
+.formulario {
+    display: flex;
+    align-items: row;
+	padding: 20px 29px;
+    font-size: 20px;
+}
+}
+
+.foto-cliente {
+    /*border: dotted red 1px;*/
+    margin-top: 80px;
+    margin-right: 25px;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    border: black 2px solid;
+	max-width:70px;
+	padding:20px;
+}
+
+#stc-final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 4px;
+}
+
+#stc-final p {
+    font-size: 15px;
+    color: white;
+}
+
+#stc-pie {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #56a081;*/
+}
+
+#stc-pie .pie {
+    position: relative;
+    width: 500px;
+    align-items: center;
+    text-align: center;
+    padding: 26px 0;
+}
+
+#stc-pie .pie p {
+    font-size: 20px;
+}
+
+#stc-pie .redes {
+    padding-top: 2%;
+}
+
+#stc-pie .redes a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#stc-pie .redes a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#stc-pie .pie-imagen {
+    position: absolute;
+    width: 120px;
+    top: 0;
+    left: 0;
+}
+
+#stc-pie .pie-imagen img {
+    width: 100%;
+}
+
+.espacio-administrador {
+    /*background: #5AA083;*/
+    height: 122px;
+}
+
+.espacio-citas-admin {
+    /*background: #5AA083;*/
+    height: 173px;
+}
+
+.espacio-hotel-admin {
+    /*background: #5AA083;*/
+    height: 173px;
+}
+
+.espacio-reportes-admin {
+    /*background: #5AA083;*/
+    height: 173px;
+}
+
+.espacio-usuarios-admin {
+    /*background: #5AA083;*/
+    height: 8px;
+}
+
+.contenidoHabitacion {
+    margin: 21px auto;
+}

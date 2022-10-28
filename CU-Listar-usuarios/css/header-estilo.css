@@ -1,0 +1,80 @@
+@charset "utf-8";
+body {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-left: 25px;
+    display: flex;
+    background-color: #56a081;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header h3 {
+    color: white;
+}
+
+.administrador {
+    font-size: 20px;
+}
+
+.header nav {
+    width: 100%;
+}
+
+.logoHeader {
+    width: fit-content;
+    height: 80px;
+    padding: 4px;
+}
+
+.navContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navContent a {
+    font-size: 20px;
+}
+
+.navContent li {
+    font-size: 16px;
+    list-style: none;
+    font-size: 16px;
+}
+
+.navContent li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.navContent li:hover a {
+    color: #003333;
+    background-color: #ffffff;
+}
+
+.admin-usuarios {
+    display: flex;
+    align-items: row;
+    /*background: #58A082;*/
+}
+
+.nav-izquierdo {
+    /*border: dotted red 1px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #56a081;*/
+    padding: 25px;
+    /*border-right: black solid 2px;*/
+}

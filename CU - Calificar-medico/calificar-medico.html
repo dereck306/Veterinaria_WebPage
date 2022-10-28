@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/validacion.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/estilos-btn.css">
+    <link rel="stylesheet" href="css/pagina-principal.css" type="text/css">
+
+
+    <title>Calificación-veterinario</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="imageHeader"> <img class="logoHeader" src="imgs/LOGO_1_PNG.png" /></a>
+        </div>
+
+        <h1 class="cliente"> Cliente </h1>
+
+        <button type="button" class="btn-logout"><a href="../CU-Iniciar-sesion/iniciarsesion_usuario.html">Cerrar sesión</a></button>
+
+    </header>
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <nav class="menuVertical">
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorcli')" class="botonMenu">Cliente</button>
+                    <div id="miNavegadorcli" class="opcionesMenu">
+                        <a href="../CU-Perfil-cliente/Pagina_Inicial _Cliente.html">Perfil cliente</a>
+                        <a href="../Registrar Mascota/registrar-Mascota.html">Registrar mascotas</a>
+                        <a href="../CU - Listar-Citas/listar-citas.html">Listar cita</a>
+                        <a href="../CU - ListarMascotas - RegObservaciones - RegCitaMedica/registro-Citas-Medicas.html">Reservar cita médica</a>
+                        <a href="../Listar Reservaciones de Hotel/listar-reservacion-hotel.html">Lista habitación de hotel</a>
+                        <a href="../CU-Formulario-habitacion/CU-Formulario-habutacion.html">Reservar habitaciones<br>de hotel</a>
+                        <a href="../CU-Registrar-pagos/registrar-pagos.html">Hacer pagos</a>
+                        <a href="../CU - Listar-Tarjetas/listar-tarjetas.html">Listar metodos de pagos</a>
+                        <a href="calificar-medico.html" class="active">Calificación Veterinario</a>
+                        <a href="../CU - ListarMascotas - RegObservaciones - RegCitaMedica/listar-mascotas.html">Listar mascotas</a>
+                        <a href="../Perfil Mascota/perfil-mascota.html">Visualizar perfil mascota</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <section class="admin-usuarios">
+
+
+                <div class='menu-derecho'>
+                    <div id="lista">
+                        <h1 class="titulo">Calificación de veterinario</h1>
+                    </div>
+                    <div class="azul">
+                        <div class="calificacion-perro">
+                            <div>
+                                <div class="formulario">
+                                    <div class="label-3">
+                                        <h2>Nombre: Ronny Montero Atencio</h2>
+                                    </div>
+                                </div>
+
+                                <div class="formulario">
+                                    <div class="label-3">
+                                        <h2>Especializacion: Consulta general</h2>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="rating" class="menu-strellas">
+
+                                <!--<input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>-->
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <!--<input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>-->
+
+                            </div>
+
+                        </div>
+
+                        <div class="guardarborrar">
+                            <h2>En la escala de 1 a 5 estrellas <br>como calificaria su experiencia con este veterinario</h2>
+                        </div>
+
+
+                        <div class="guardarborrar">
+                            <button class="btn-logout" type="button" id="btn-guardar">Guardar</button>
+                            <button class="btn-logout" type="reset" id="btn-guardar">Borrar</button>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="fondo-foto">
+                    <img class="foto-cliente" src="imgs/user.jpg" alt="Fotografia del cliente">
+                </div>
+
+            </section>
+        </div>
+    </section>
+    <section id="stc-pie">
+
+        <div class="pie">
+            <div class="pie-imagen">
+                <img src="imgs/LOGO_1_PNG.png" alt="Logo">
+            </div>
+            <p>Clínica veterinaria Moka @2022</p>
+        </div>
+
+    </section>
+    <section id="stc-final">
+        <div>
+            <p>Diseñado por Innovatech</p>
+        </div>
+    </section>
+    <script src="js/calificar-mascotas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        function myFunction(pIdCont) {
+            let tempContenido = document.getElementById(pIdCont);
+            if (tempContenido.className == "opcionesMenu") {
+                tempContenido.className = "opcionesMenu show";
+            } else {
+                tempContenido.className = "opcionesMenu";
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

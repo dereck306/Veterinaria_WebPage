@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+#stc-tabla {
+    width: 100%;
+}
+
+#lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#lista .titulo {
+    font-size: 25px;
+}
+
+table {
+    margin-bottom: 20px;
+}
+
+#stc-tabla .tbl-info thead {
+    background-color: #355764;
+    color: white;
+}
+
+#stc-tabla .tbl-info thead tr th {
+    padding: 20px 1%;
+    width: 5%;
+}
+
+#stc-tabla .tbl-info tbody tr {
+    border-bottom: 2px solid #5A8F7B;
+}
+
+#stc-tabla .tbl-info tbody tr td {
+    padding: 25px 1%;
+    text-align: center;
+    width: 5%;
+}
+
+#stc-tabla .tbl-info tbody tr:nth-child(even) {
+    background: #F1F1F1
+}
+
+.btn-editar {
+    background: #2C3333;
+    border: transparent;
+    cursor: pointer;
+    padding: 5px;
+    width: 60px;
+    color: white;
+}
+
+.btn-eliminar {
+    background: #5A8F7B;
+    border: transparent;
+    cursor: pointer;
+    padding: 5px;
+    width: 60px;
+    color: white;
+}
+
+.btn-editar:hover {
+    background: #25d17b
+}
+
+.btn-eliminar:hover {
+    background: #071eea;
+}
+
+#Boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Boton .salir {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 50px;
+    background: #5A8F7B;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    border: none;
+}
+
+#Boton .salir:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.btn-agregar {
+    background: #6ab04c;
+    border: transparent;
+    cursor: pointer;
+    padding: 5px;
+    width: 80px;
+    color: white;
+}
+
+.btn-agregar:hover {
+    background: #badc58;
+}
+
+@media (max-width:100%) {
+    form {
+        width: 100%;
+    }
+}

@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+.infoRanking{
+    display: flex;
+    padding: 10px 0px}
+.tipoRanking{width: 100%;
+    max-width: 500px;
+    min-width: 500px;
+    margin: 0 auto;
+    padding: 10px 0px;}
+.rankingMascotas{text-align: center;
+    padding: 10px;
+	    font-size: 22px;
+    color: white;}
+.contenidoRanking{border: 1px solid #000000;
+    padding: 5px;
+    text-align: center;}
+.clasificacion{color:yellow;}
+.imagenMascota {
+    width: 158px;}
+
+.usuarioFoto{
+    padding: 0px 45px;
+    width: 155px;
+}
+.primeraEstrella{display: none;}

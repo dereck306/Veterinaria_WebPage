@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+section{display: flex;
+    padding: 14px 113px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    align-items: center;}
+.mascotasFotos{    margin: auto;
+    border: 2px solid black;
+    float: left;
+    width: 834px;
+
+}
+.imagenEspecializacion{padding-right:70px;}
+
+.landingServicios{    text-align: center;
+padding:25px 0px;
+font-size: 20px;}
+.tamaños_Especialidades{padding:20px 0px;
+font-weight: bold;}

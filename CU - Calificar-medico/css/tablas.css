@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.tbl-info thead {
+    background: black;
+    color: white;
+}
+
+.tbl-info thead tr th {
+    padding: 10px 1%;
+    width: 700px;
+}
+
+
+/*.tbl-info thead {
+    border-bottom: blue 3px solid;
+}*/
+
+
+/*estilo des tbody*/
+
+.tbl-info tbody tr {
+    border-bottom: black 2px solid;
+    border-right: black 2px solid;
+}
+
+.tbl-info tbody tr td {
+    padding: 10px 1%;
+    text-align: center;
+    width: 5%;
+    font-size: 12px;
+}
+
+.tbl-info tbody tr:nth-child(even) {
+    background-color: grey;
+}
+
+.btn-desactivar {
+    background: #CCCCCC;
+    border: transparent;
+    border-right: 2px solid black;
+    cursor: pointer;
+    padding: 5px;
+    width: 72px;
+    border-radius: 4px;
+}
+
+.btn-editar {
+    background: #CCCCCC;
+    border: transparent;
+    cursor: pointer;
+    padding: 5px;
+    width: 72px;
+    border-radius: 4px;
+    margin-bottom: 3px;
+    border-right: 2px solid black;
+}
+
+.btn-desactivar:hover {
+    background: #5AA083;
+    border: black 1px dotted;
+}
+
+.btn-editar:hover {
+    background: #5AA083;
+    border: black 1px dotted;
+}
+
+.tbl-info thead {
+    visibility: none;
+    border-right: 2px solid black;
+}
+
+.ocultar {
+    display: none;
+}

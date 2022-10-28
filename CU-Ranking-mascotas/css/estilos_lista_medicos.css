@@ -1,0 +1,15 @@
+
+
+  .listaMedicos{
+	text-align: center;
+    font-size: 25px;
+	padding:2%;
+	  }
+  #sct-tabla,th,td{ padding:2%;}
+  table{ width:100%; }
+  th{ background-color:#1c524a; color:white;}
+  tr:nth-child(even) {background-color: #dbebe7;}
+  tr:nth-child(odd) {background-color: #f3f7f7;}
+  
+
+

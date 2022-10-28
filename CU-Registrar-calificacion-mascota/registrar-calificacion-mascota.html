@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header-estilo.css">
+    <link rel="stylesheet" href="css/footer-estilo.css" type="text/css">
+    <link rel="stylesheet" href="css/error.css">
+    <link rel="stylesheet" href="css/registrar-calificacion-mascota.css">
+    <link rel="stylesheet" href="css/estilos-btn.css">
+    <link rel="stylesheet" href="css/pagina-principal.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+
+
+    <title>Registrar calificación de la mascota</title>
+
+</head>
+
+<body>
+
+    <!-- Header start -->
+
+    <header class="header">
+
+        <div class="imageHeader"> <img class="logoHeader" src="imgs/LOGO_1_PNG.png" /></a>
+        </div>
+
+        <h1> Veterinario </h1>
+
+        <button type="button" class="btn-logout"><a href="../../iniciarsesion_usuario.html">Cerrar sesión</a></button>
+
+    </header>
+
+    <!-- Header end -->
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <nav class="menuVertical">
+               
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadormed')" class="botonMenu">Veterinario</button>
+                    <div id="miNavegadormed" class="opcionesMenu">
+                        <a href="../CU-Visualizar-perfil-del-veterinario/Pagina-del-veterinario.html" >Perfil Veterinario</a>
+                        <a href="../CU - ListarMascotas - RegObservaciones - RegCitaMedica/registrar-Observaciones.html">Registrar observaciones médicas</a>
+                        <a href="registrar-calificacion-mascota.html"class="active">Registrar calificación de la mascota</a>
+                        <a href="../CU-Ranking-mascotas/ejemplo ranking.html">Ranking estrellas mascotas</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <div class="titulo">
+                <h1>Calificación de la mascota</h1>
+            </div>
+
+            <!-- Registrar calificacion de la mascota start -->
+
+            <form id="formulario">
+
+                <h1>Información de la mascota</h1>
+
+                <div class="imagen">
+                    <img src="imgs/mascota.jpg" alt="">
+                </div>
+
+                <div>
+                    <h1>Nombre de la mascota</h1>
+                    <p class="texto">Poncho</p>
+                </div>
+
+                <div>
+                    <h1>Tipo de animal</h1>
+                    <p class="texto">Perro</p>
+                </div>
+
+                <div>
+                    <h1>Raza</h1>
+                    <p class="texto">Pug</p>
+                </div>
+
+                <div>
+                    <label for="">Servicio médico: </label>
+                    <select id="slt-servicio" class="servicioslc">
+                <option value="">-- Seleccione el servicio médico que concluyó --</option>
+                <option value="Traumatología">Traumatología</option>
+                <option value="Dermatología">Dermatología</option>
+                <option value="Oftalmología">Oftalmología</option>
+                <option value="Fisioterapia">Fisioterapia</option>
+                <option value="Anesteología">Anesteología</option>
+                <option value="Consulta-general">Consulta general</option>
+            </select>
+                </div>
+
+                <div>
+                    <label for="">Comportamiento de la mascota: </label>
+                    <select id="slt-comportamiento" class="comportamientotlc">
+                <option value="">-- Seleccione el comportamiento de la mascota --</option>
+                <option value="bueno">Bueno</option>
+                <option value="estandar">Estandar</option>
+                <option value="malo">Malo</option>
+            </select>
+                </div>
+
+                <div>
+                    <label for="">Calificación por estrellas: </label>
+                    <select id="slt-estrellas" class="estrellastlc">
+                <option value="">-- Seleccione las estrellas que le quiere dar a la mascota --</option>
+                <option value="1-estrella">★</option>
+                <option value="2-estrellas">★★</option>
+                <option value="3-estrellas">★★★</option>
+            </select>
+                </div>
+
+
+                <button type="button" id="btn-calificación" class="boton1">Guardar calificación</button>
+
+                <button type="button" id="btn-cancelar" class="boton">Cancelar</button>
+
+            </form>
+
+            <!-- Registrar calificacion de la mascota end -->
+
+            <!-- Footer start -->
+        </div>
+    </section>
+
+    <div id="stc-pie">
+        <div class="pie">
+            <div class="pie-imagen"> <img src="imgs/LOGO_1_PNG.png" alt="Logo"> </div>
+            <p>Clínica veterinaria Moka @2022</p>
+        </div>
+    </div>
+    <div id="stc-final">
+        <div>
+            <p>Diseñado por Innovatech</p>
+        </div>
+    </div>
+
+    <!-- Footer end -->
+
+    <!-- JS strat -->
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/servicio-general.js"></script>
+    <script src="js/registrar-calificacion-mascota.js"></script>
+
+    <!-- JS end -->
+    <script>
+        function myFunction(pIdCont) {
+            let tempContenido = document.getElementById(pIdCont);
+            if (tempContenido.className == "opcionesMenu") {
+                tempContenido.className = "opcionesMenu show";
+            } else {
+                tempContenido.className = "opcionesMenu";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

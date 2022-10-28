@@ -1,0 +1,64 @@
+@charset "utf-8";
+body {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    background-color: #56a081;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding-left: 25px;
+    padding-right: 50px;
+}
+
+.header h1 {
+    font-size: 20px;
+		color: white;}
+}
+
+.logoHeader {
+    width: 91%;
+    height: 80px;
+    padding: 5px;
+    /*border: red 1px dotted;*/
+}
+
+.header-derecho {
+    /*border: red solid 1px;*/
+    display: flex;
+    /*background-color: #56a081;*/
+    justify-content: left;
+    /*width: 100%;*/
+    align-items: center;
+    height: 80px;
+    padding-left: 25px;
+    /*padding-right: 25px;*/
+}
+
+.header-derecho h2 {
+    border-bottom: solid black 2px;
+}
+
+.menu-derecho p {
+    text-align: center;
+    margin-top: 102px;
+    padding-left: 25px;
+    padding-right: 25px;
+    /*border: dotted red 1px;*/
+}
+
+.division {
+    border-bottom: black solid 2px;
+    margin-left: 240px;
+}
+
+.mascota-cuidados h2 {
+    width: 60px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos_header.css">
+    <link rel="stylesheet" href="css/ListarMascotas/listado.css">
+    <link rel="stylesheet" href="css/footer-estilo.css">
+    <link rel="stylesheet" href="css/estilos-btn.css">
+    <link rel="stylesheet" href="css/paginaInicial.css">
+    <link rel="stylesheet" href="css/paginaInicial2.css">
+    <link rel="stylesheet" href="css/tablas.css">
+
+    <title>Listar Mascotas</title>
+
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <div class="imageHeader"> <img class="logoHeader" src="img/logo.png" /></a>
+        </div>
+
+        <h1> Cliente </h1>
+
+        <button type="button" class="btn-logout">Cerrar sesión</button>
+
+    </header>
+    </header>
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <nav class="menuVertical">
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorcli')" class="botonMenu">Cliente</button>
+                    <div id="miNavegadorcli" class="opcionesMenu">
+                        <a href="../CU-Perfil-cliente/Pagina_Inicial _Cliente.html">Perfil cliente</a>
+                        <a href="../Registrar Mascota/registrar-Mascota.html">Registrar mascotas</a>
+                        <a href="../CU - Listar-Citas/listar-citas.html">Listar cita</a>
+                        <a href="../CU - ListarMascotas - RegObservaciones - RegCitaMedica/registro-Citas-Medicas.html">Reservar cita médica</a>
+                        <a href="../Listar Reservaciones de Hotel/listar-reservacion-hotel.html">Lista habitación de hotel</a>
+                        <a href="../CU-Formulario-habitacion/CU-Formulario-habutacion.html">Reservar habitaciones<br>de hotel</a>
+                        <a href="../CU-Registrar-pagos/registrar-pagos.html">Hacer pagos</a>
+                        <a href="../CU - Listar-Tarjetas/listar-tarjetas.html">Listar metodos de pagos</a>
+                        <a href="../CU - Calificar-medico/calificar-medico.html">Calificación Veterinario</a>
+                        <a href="listar-mascotas.html" class="active">Listar mascotas</a>
+                        <a href="../Perfil Mascota/perfil-mascota.html">Visualizar perfil mascota</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <div class="listado">
+                <div id="lista">
+                    <h1 class="titulo">Listar mascotas</h1>
+                </div>
+                <table id="tbl-mascotas">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Tipo</th>
+                            <TH>Raza</TH>
+                            <th>Foto</th>
+                            <th>Fecha de nacimiento</th>
+                            <th>Cuidados</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="stc-pie">
+
+        <div class="pie">
+            <div class="pie-imagen">
+                <img src="img/Logo.png" alt="Logo">
+            </div>
+            <p>Clínica veterinaria Moka @2022</p>
+        </div>
+
+        <div class="redes">
+            <a href="">Facebook</a><span> / </span>
+            <a href="">Twitter</a><span> / </span>
+            <a href="">Correo</a>
+        </div>
+
+    </div>
+
+    <div id="stc-final">
+        <div>
+            <p>Diseñado por Innovatech</p>
+        </div>
+    </div>
+
+    <script src="HTTPS://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+    <script src="js/ListarMascotas/servicio-general.js"></script>
+    <script src="js/ListarMascotas/listar-mascotas.js"></script>
+    <script>
+        function myFunction(pIdCont) {
+            let tempContenido = document.getElementById(pIdCont);
+            if (tempContenido.className == "opcionesMenu") {
+                tempContenido.className = "opcionesMenu show";
+            } else {
+                tempContenido.className = "opcionesMenu";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    /*carlos-------------------------------------------------------------------------------------------------------*/
+    
+    .nuestros-servicios-medicos {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 40px;
+    }
+    
+    .nuestros-servicios-medicos h1 {
+        font-size: 25px;
+    }
+    
+    .contactenos {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    
+    .contactenos h1 {
+        font-size: 25px;
+    }
+    
+    .contactenos .contac-info .maps h2 {
+        font-size: 20px;
+    }
+    
+    .contactenos .contac-info .horarios p {
+        font-size: 20px;
+    }
+    
+    .header-carlos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        /*border: dotted 1px red;*/
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin-top: 15px;
+    }
+    
+    .serv-med-arriba {
+        padding-top: 40px;
+        display: flex;
+        align-items: row;
+        justify-content: space-between;
+    }
+    
+    .serv-med-arriba div {
+        display: flex;
+        /*border: dotted 1px red;*/
+        height: 200px;
+        width: 320px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    
+    .serv-med-arriba h1 {
+        padding-bottom: 130px;
+        text-shadow: 1px 1px white;
+    }
+    
+    .serv-med-abajo {
+        padding-top: 40px;
+        /*padding-bottom: 20px;*/
+        display: flex;
+        align-items: row;
+        justify-content: space-between;
+    }
+    
+    .serv-med-abajo div {
+        display: flex;
+        /*border: dotted 1px red;*/
+        height: 200px;
+        width: 320px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    
+    .serv-med-abajo h1 {
+        padding-bottom: 130px;
+        text-shadow: 1px 1px rgba(250, 250, 250, 0.863);
+    }
+    
+    .contac-info {
+        padding-top: 40px;
+        display: flex;
+        align-items: row;
+        justify-content: space-between;
+    }
+    
+    .maps {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid 1px black;
+        height: 370px;
+        width: 550px;
+        text-shadow: 2px 2px rgba(250, 250, 250, 0.863);
+        padding-top: 250px;
+        border-radius: 5px;
+    }
+    
+    .horarios {
+        display: flex;
+        align-items: center;
+        line-height: 3em;
+        /*border: dotted 1px red;*/
+        height: 370px;
+        width: 550px;
+    }
+    
+    .horarios p {
+        font-size: 20px;
+    }
+    
+    .bold {
+        font-weight: bold;
+    }
+    
+    .trauma {
+        background-image: url("../imgs/Traumatología.png");
+        background-position: center 100%;
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .derma {
+        background-image: url("../imgs/Dermatología_2.png");
+        background-position: center 100%;
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .ofta {
+        background-image: url("../imgs/Oftalmología.png");
+        background-position: center 100%;
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .fisio {
+        background-image: url("../imgs/Fisioterapia.png");
+        background-position: center 100%;
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .anestesia {
+        background-image: url("../imgs/Anesteología.png");
+        background-position: center 100%;
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .consulta-general {
+        background-image: url("../imgs/Consulta_general.png");
+        background-position: center 100%;
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .maps {
+        background-image: url("../imgs/maps.png");
+        background-position: center 100%;
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    /*Dereck-------------------------------------------------------------------------------------------------------*/
+    
+    .nuestro-hotel {
+        /*agrege esto para darle formato al header*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        /*border: dotted 1px red;*/
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        font-size: 25px;
+    }
+    
+    .nuestro-hotel1 {
+        /*agre el padding top la seccion*/
+        padding-top: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    
+    .nuestro-hotel-arrange {
+        padding-top: 40px;
+        display: flex;
+        align-items: row;
+        justify-content: space-between;
+    }
+    
+    .nuestro-hotel1 .info-hotel-texto {
+        display: flex;
+        font-size: 20px;
+        align-items: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 2em;
+        height: 370px;
+        width: 550px;
+        /*border: dotted 1px red;*/
+    }
+    
+    .nuestro-hotel-arrange img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid 1px black;
+        height: 370px;
+        width: 550px;
+        text-shadow: 2px 2px rgba(250, 250, 250, 0.863);
+        /*padding-top: 250px;*/
+        border-radius: 5px;
+    }
+    
+    .imgTag {
+        width: 500px;
+        height: 250px;
+    }
+    /*isaac-------------------------------------------------------------------------------------------------------*/
+    
+    #sct-titulo {
+        display: flex;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        padding-left: 60px;
+        padding-right: 60px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    
+    #sct-titulo h1 {
+        font-size: 25px;
+    }
+    
+    .quienes-somos {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 40px;
+    }
+    
+    .quienes-somos-arrange {
+        padding-top: 40px;
+        display: flex;
+        align-items: row;
+        justify-content: space-between;
+    }
+    
+    .quienes-somos-arrange img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid 1px black;
+        height: 370px;
+        width: 550px;
+        border-radius: 5px;
+    }
+    
+    .quienes-somos-arrange p {
+        display: flex;
+        align-items: center;
+        line-height: 2em;
+        /*border: dotted 1px red;*/
+        height: 370px;
+        width: 550px;
+        font-size: 20px;
+    }
+    /*issac piede pagina ---------------------------------------------------------------------------------------------*/
+    
+    #stc-final {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        background-color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    #stc-final p {
+        font-size: 15px;
+        color: white;
+    }
+    
+    #stc-pie {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #56a081;
+        margin-top: 55px;
+    }
+    
+    #stc-pie .pie {
+        position: relative;
+        width: 500px;
+        align-items: center;
+        text-align: center;
+        padding: 26px 0;
+    }
+    
+    #stc-pie .pie p {
+        font-size: 20px;
+    }
+    
+    #stc-pie .redes {
+        padding-top: 2%;
+    }
+    
+    #stc-pie .redes a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+    
+    #stc-pie .redes a:hover {
+        text-decoration: none;
+        color: white;
+    }
+    
+    #stc-pie .pie-imagen {
+        position: absolute;
+        width: 120px;
+        top: 0;
+        left: 0;
+    }
+    
+    #stc-pie .pie-imagen img {
+        width: 100%;
+    }
+    
+    .redes span {
+        font-size: 30px;
+    }
+    
+    .nose {
+        position: absolute;
+        margin-left: 120px;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    
+    .nose2 {
+        position: absolute;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 862px;
+        margin-bottom: 200px;
+        margin-top: 5px;
+    }

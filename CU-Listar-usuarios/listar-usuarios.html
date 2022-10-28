@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header-estilo.css">
+    <link rel="stylesheet" href="css/footer-estilo.css">
+    <link rel="stylesheet" href="css/lista-estilo.css">
+    <link rel="stylesheet" href="css/estilos-btn.css">
+    <link rel="stylesheet" href="css/tablas.css">
+    <link rel="stylesheet" href="css/pagina-principal.css">
+
+
+    <title>Listar usuarios</title>
+
+</head>
+
+<body>
+
+    <!-- Header start -->
+    <header class="header">
+
+        <div class="imageHeader"> <img class="logoHeader" src="imgs/LOGO_1_PNG.png" /></a>
+        </div>
+
+        <h3 class="administrador"> Administrador </h3>
+
+        <button type="button" class="btn-logout"><a href="../CU-Iniciar-sesion/iniciarsesion_usuario.html">Cerrar sesión</a></button>
+
+    </header>
+
+    </header>
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <nav class="menuVertical">
+               
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadoradm')" class="botonMenu">Administrador</button>
+                    <div id="miNavegadoradm" class="opcionesMenu">
+                        <a href="../ADMINISTRADOR/administrador.html">Perfil Administrador</a>
+                        <a href="listar-usuarios.html">listar usuarios </a>
+                        <a href="../CU - Registrar-Usuarios/registrar-usuarios.html">Registrar usuarios</a>
+                        
+
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+        <div>
+            <div id="lista">
+                <h1 class="titulo">Lista de usuarios</h1>
+            </div>
+
+            <section id="stc-tabla">
+                <table id="tbl-usuarios" class="tbl-info">
+                    <thead>
+                        <tr>
+                            <th><label for="txt-filtro">Filtro</label>
+                                <input type="text" id="txt-filtro"></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th><button type="button" id="btn-agregar" class="btn-agregar"><a href="../CU - Registrar-Usuarios/registrar-usuarios.html">Agregar</a></button></th>
+                        </tr>
+                        <tr>
+                            <th>Tipo de usuario</th>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <th>Teléfono</th>
+                            <th>Cédula</th>
+                            <th>Dirección</th>
+                            <th>Correo electrónico</th>
+                            <th>Contraseña</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- lista end -->
+
+        </div>
+
+    </section>
+
+    <!-- Footer start -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/servicio-general.js"></script>
+    <script src="js/usuariosArreglo.js"></script>
+
+    <section id="stc-pie">
+
+        <div class="pie">
+            <div class="pie-imagen">
+                <img src="imgs/LOGO_1_PNG.png" alt="Logo">
+            </div>
+            <p>Clínica veterinaria Moka @2022</p>
+        </div>
+
+    </section>
+    <section id="stc-final">
+        <div>
+            <p>Diseñado por Innovatech</p>
+        </div>
+    </section>
+<script>
+        function myFunction(pIdCont) {
+            let tempContenido = document.getElementById(pIdCont);
+            if (tempContenido.className == "opcionesMenu") {
+                tempContenido.className = "opcionesMenu show";
+            } else {
+                tempContenido.className = "opcionesMenu";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

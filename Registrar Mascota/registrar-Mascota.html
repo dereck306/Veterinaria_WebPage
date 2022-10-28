@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/estilos_header.css">
+    <link rel="stylesheet" href="Css/estilos-btn.css">
+    <link rel="stylesheet" href="Css/pagina-principal.css" type="text/css">
+    <link rel="stylesheet" href="Css/index.css" type="text/css">
+    <link rel="stylesheet" href="Css/estilos_header.css">
+    <link rel="stylesheet" href="Css/footer-estilo2.css">
+    <link rel="stylesheet" href="Css/formReserva.css">
+    <title>Cliente - Registrar Mascotas</title>
+</head>
+
+<body>
+    <!--Inicio: Header -->
+    <header class="header">
+
+        <div class="imageHeader"> <img class="logoHeader" src="img/logo.png" /></a>
+        </div>
+
+        <h1> Cliente </h1>
+
+        <button type="button" class="btn-logout"><a href="../CU-Iniciar-sesion/iniciarsesion_usuario.html">Cerrar sesión</a></button>
+
+    </header>
+    <!--Fin: Header -->
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <nav class="menuVertical">
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorcli')" class="botonMenu">Cliente</button>
+                    <div id="miNavegadorcli" class="opcionesMenu">
+                        <a href="../CU-Perfil-cliente/Pagina_Inicial _Cliente.html">Perfil cliente</a>
+                        <a href="registrar-Mascota.html" class="active">Registrar mascotas</a>
+                        <a href="../CU - Listar-Citas/listar-citas.html">Listar cita</a>
+                        <a href="../CU - ListarMascotas - RegObservaciones - RegCitaMedica/registro-Citas-Medicas.html">Reservar cita médica</a>
+                        <a href="../Listar Reservaciones de Hotel/listar-reservacion-hotel.html">Lista habitación de hotel</a>
+                        <a href="../CU-Formulario-habitacion/CU-Formulario-habutacion.html">Reservar habitaciones<br>de hotel</a>
+                        <a href="../CU-Registrar-pagos/registrar-pagos.html">Hacer pagos</a>
+                        <a href="../CU - Listar-Tarjetas/listar-tarjetas.html">Listar metodos de pagos</a>
+                        <a href="../CU - Calificar-medico/calificar-medico.html">Calificación Veterinario</a>
+                        <a href="../CU - ListarMascotas - RegObservaciones - RegCitaMedica/listar-mascotas.html">Listar mascotas</a>
+                        <a href="../Perfil Mascota/perfil-mascota.html">Visualizar perfil mascota</a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+        <div class="contenidoHabitacion">
+            <form class="formularioReserva" name="miFormulario" id="miFormulario">
+                <fieldset>
+
+                    <legend>Registrar Una Mascota</legend>
+                    <div class="flexContent">
+                        <label for="pNombre">Nombre:</label>
+                        <input type="text" id="pNombre" name="pNombre" class="casillas_formulario">
+                    </div>
+                    <span id="msg"></span>
+                    <div class="flexContent">
+                        <label for="pHabitacion">Tipo de Mascota:</label>
+                        <select id="pHabitacion" name="pHabitacion" class="casillas_formulario">
+                            <option value="0" disabled selected>---- SELECCIONE UNA OPCIÓN ----</option>
+                            <option value="Perro">Perro</option>
+                            <option value="Gato">Gato</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="flexContent">
+                        <label for="pRaza">Tipo de raza*</label>
+                        <input class="casillas_formulario" type="text" name="pRaza" id="pRaza" />
+                    </div>
+                    <div class="flexContent">
+                        <label for="fechaEn">Fecha de Nacimiento:</label>
+                        <input class="casillas_formulario" type="date" id="fechaEn" name="fechaEn">
+                    </div>
+                    <div class="flexContent">
+                        <label for="fechaSa">Foto de la Mascota:</label>
+                        <input class="casillas_formulario" type="file" id="fechaSa" name="fechaSa">
+                    </div>
+                    <div>
+                        <label class="comentarioFormulario" for="pComentario">Cuidados especiales de la mascota*</label>
+                        <br />
+                        <textarea name="pComentario" id="pComentario" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <button type="button" id="submit" class="botonEnviar">Enviar</button>
+                    <a class="botonRegresar" href="../CU-Perfil-cliente/Pagina_Inicial _Cliente.html">Regresar</a>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <!-- Inicio: Footer -->
+    <div id="stc-pie">
+        <div class="pie">
+            <div class="pie-imagen"> <img src="img/logo.png" alt="Logo"> </div>
+            <p>Clínica veterinaria Moka @2022</p>
+        </div>
+    </div>
+    <div id="stc-final">
+        <div>
+            <p>Diseñado por Innovatech</p>
+        </div>
+    </div>
+    <!-- Fin: Footer -->
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="Js/registrarmacota.js"></script>
+<script src="Js/servicio-general.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    function myFunction(pIdCont) {
+        let tempContenido = document.getElementById(pIdCont);
+        if (tempContenido.className == "opcionesMenu") {
+            tempContenido.className = "opcionesMenu show";
+        } else {
+            tempContenido.className = "opcionesMenu";
+        }
+
+    }
+</script>
+
+</html>

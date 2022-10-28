@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos_header.css">
+    <link rel="stylesheet" href="css/footer-estilo.css">
+    <link rel="stylesheet" href="css/estilos-btn.css">
+    <link rel="stylesheet" href="css/RegistrarObservaciones/registrar-observaciones.css">
+    <link rel="stylesheet" href="css/RegistrarObservaciones/validacion.css">
+    <link rel="stylesheet" href="css/RegistrarObservaciones/formReserva.css">
+
+    <link rel="stylesheet" href="css/paginaInicial.css">
+    <link rel="stylesheet" href="css/paginaInicial2.css">
+
+    <title>Registrar Obsercaciones</title>
+
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="imageHeader"> <img class="logoHeader" src="img/logo.png" /></a>
+        </div>
+
+        <h1> Veterinario </h1>
+
+        <button type="button" class="btn-logout"><a href="../CU-Iniciar-sesion/iniciarsesion_usuario.html">Cerrar sesión</a></button>
+
+    </header>
+
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <nav class="menuVertical">
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadormed')" class="botonMenu">Veterinario</button>
+                    <div id="miNavegadormed" class="opcionesMenu">
+                        <a href="../CU-Visualizar-perfil-del-veterinario/Pagina-del-veterinario.html">Perfil Veterinario</a>
+                        <a href="registrar-Observaciones.html" class="active">Registrar observaciones médicas</a>
+                        <a href="../CU-Registrar-calificacion-mascota/registrar-calificacion-mascota.html">Registrar calificación de la mascota</a>
+                        <a href="../CU-Ranking-mascotas/ejemplo ranking.html">Ranking estrellas mascotas</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        </div>
+        <div class="contenidoDerecho">
+
+            <div class="contenidoHabitacion">
+                <form class="formularioReserva" name="miFormulario" onsubmit="return validateForm(this)" method="post" id="miFormulario">
+                    <fieldset>
+
+                        <legend>Observaciones médicas</legend>
+                        <span id="msg"></span>
+                        <div class="flexContent">
+                            <label for="inpDiasR">N°Días de reposo:</label>
+                            <input type="number" min="1" max="9" step="1" id="inpDias" name="inpDiasR" class="casillas_formulario">
+                        </div>
+                        <div class="flexContent">
+                            <label for="inpTipo">Tipo de atención:</label>
+                            <select id="inpTipo" name="inpTipo" class="casillas_formulario">
+                                <option value="0" disabled selected>---- SELECCIONE UNA OPCIÓN ----</option>
+                                <option value="General">General</option>
+                                <option value="Especializada">Especializada</option>
+                                <option value="Avanzada">Avanzada</option>
+                            </select>
+                        </div>
+                        <div class="flexContent">
+                            <label for="inpVacunas">Vacunas colocadas:</label>
+                            <input class="casillas_formulario" type="text" id="inpVacunas" name="inpVacunas">
+                        </div>
+                        <div class="flexContent">
+                            <label for="inpAlergias">Alergias:</label>
+                            <input class="casillas_formulario" type="text" id="inpAlergias" name="inpAlergias">
+                        </div>
+                        <div class="flexContent">
+                            <label for="inpMedicamentos">Medicamentos:</label>
+                            <input class="casillas_formulario" type="text" id="inpMedicamentos" name="inpMedicamentos">
+                        </div>
+                        <div>
+                            <label class="comentarioFormulario" for="pComentario">Cuidados especiales de la mascota*</label>
+                            <br />
+                            <textarea name="pComentario" id="pComentario" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <input type="button" value="Guardar" id="btnGuardar">
+                        <a class="botonRegresar" href="../CU-Visualizar-perfil-del-veterinario/Pagina-del-veterinario.html">Regresar</a>
+                    </fieldset>
+                </form>
+            </div>
+
+
+    </section>
+
+
+
+
+    <div id="stc-pie">
+        <div class="pie">
+            <div class="pie-imagen"> <img src="img/logo.png" alt="Logo"> </div>
+            <p>Clínica veterinaria Moka @2022</p>
+        </div>
+    </div>
+    <div id="stc-final">
+        <div>
+            <p>Diseñado por Innovatech</p>
+        </div>
+    </div>
+    <script>
+        function myFunction(pIdCont) {
+            let tempContenido = document.getElementById(pIdCont);
+            if (tempContenido.className == "opcionesMenu") {
+                tempContenido.className = "opcionesMenu show";
+            } else {
+                tempContenido.className = "opcionesMenu";
+            }
+
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="js/RegistrarObservaciones/registrar-observacion.js"></script>
+    <script src="js/RegistrarObservaciones/servicio-general.js"></script>
+
+</body>

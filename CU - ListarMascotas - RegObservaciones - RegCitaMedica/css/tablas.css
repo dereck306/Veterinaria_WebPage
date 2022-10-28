@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.tbl-info thead {
+    background: #365763;
+    color: white;
+}
+
+.tbl-info thead tr th {
+    padding: 20px 1%;
+    width: 700px;
+}
+
+
+/*.tbl-info thead {
+    border-bottom: blue 3px solid;
+}*/
+
+
+/*estilo des tbody*/
+
+.tbl-info tbody tr {
+    border-bottom: 2px solid #5A8F7B;
+}
+
+.tbl-info tbody tr td {
+    padding: 25px 1%;
+    text-align: center;
+    width: 5%;
+    font-size: 16px;
+}
+
+.tbl-info tbody tr:nth-child(even) {
+    background: #F1F1F1;
+}
+
+.btn-desactivar {
+    background: #5A8F7B;
+    border: transparent;
+    cursor: pointer;
+    padding: 5px;
+    width: 75px;
+    color: white;
+}
+
+.btn-editar {
+    background: #2C3333;
+    border: transparent;
+    cursor: pointer;
+    padding: 5px;
+    width: 75px;
+    color: white;
+}
+
+.btn-desactivar:hover {
+    background: #071eea;
+}
+
+.btn-editar:hover {
+    background: #25d17b;
+}
+
+.tbl-info thead {
+    visibility: none;
+    border-right: 2px solid black;
+}
+
+.ocultar {
+    display: none;
+}
+
+.btn-agregar {
+    background: #6ab04c;
+    border: transparent;
+    cursor: pointer;
+    padding: 5px;
+    width: 80px;
+    color: white;
+}
+
+.btn-agregar:hover {
+    background: #badc58;
+}

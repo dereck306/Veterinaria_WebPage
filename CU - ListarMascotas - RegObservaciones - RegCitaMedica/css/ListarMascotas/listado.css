@@ -1,0 +1,70 @@
+.listado {
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.listado h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#listado-mascotas {
+    margin-top: 15px;
+}
+
+table {
+    background-color: rgb(168, 164, 164);
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+tbody tr {
+    height: 100px;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+thead {
+    background-color: #229472;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+tr:hover td {
+    background-color: azure;
+}
+
+.btn-desactivar {
+    background: #5A8F7B;
+    border: transparent;
+    cursor: pointer;
+    padding: 5px;
+    width: 75px;
+    color: white;
+}
+
+.btn-editar {
+    background: #2C3333;
+    border: transparent;
+    cursor: pointer;
+    padding: 5px;
+    width: 75px;
+    color: white;
+}
+
+.btn-desactivar:hover {
+    background: #071eea;
+}
+
+.btn-editar:hover {
+    background: #25d17b;
+}

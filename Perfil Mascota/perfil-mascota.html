@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/estilos_header.css">
+    <link rel="stylesheet" href="Css/estilos-btn.css">
+    <link rel="stylesheet" href="Css/paginaInicial.css">
+    <link rel="stylesheet" href="Css/validacion.css">
+    <link rel="stylesheet" href="Css/footer-estilo.css">
+    <link rel="stylesheet" href="Css/paginaInicial2.css">
+    <title>Perfil Mascota</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="imageHeader"> <img class="logoHeader" src="img/logo.png" /></a>
+        </div>
+
+        <h1> Cliente </h1>
+
+        <button type="button" class="btn-logout"><a href="../CU-Iniciar-sesion/iniciarsesion_usuario.html">Cerrar sesión</a></button>
+
+    </header>
+
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <nav class="menuVertical">
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorcli')" class="botonMenu">Cliente</button>
+                    <div id="miNavegadorcli" class="opcionesMenu">
+                        <a href="../CU-Perfil-cliente/Pagina_Inicial _Cliente.html">Perfil cliente</a>
+                        <a href="../Registrar Mascota/registrar-Mascota.html">Registrar mascotas</a>
+                        <a href="../CU - Listar-Citas/listar-citas.html">Listar cita</a>
+                        <a href="../CU - ListarMascotas - RegObservaciones - RegCitaMedica/registro-Citas-Medicas.html">Reservar cita médica</a>
+                        <a href="../Listar Reservaciones de Hotel/listar-reservacion-hotel.html">Lista habitación de hotel</a>
+                        <a href="../CU-Formulario-habitacion/CU-Formulario-habutacion.html">Reservar habitaciones<br>de hotel</a>
+                        <a href="../CU-Registrar-pagos/registrar-pagos.html">Hacer pagos</a>
+                        <a href="../CU - Listar-Tarjetas/listar-tarjetas.html">Listar metodos de pagos</a>
+                        <a href="../CU - Calificar-medico/calificar-medico.html">Calificación Veterinario</a>
+                        <a href="../CU - ListarMascotas - RegObservaciones - RegCitaMedica/listar-mascotas.html">Listar mascotas</a>
+                        <a href="perfil-mascota.html" class="active">Visualizar perfil mascota</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="contenidoDerecho">
+            <section class="admin-usuarios">
+                <div class="menu-derecho">
+                    <div class="header-derecho">
+                        <h1> Información de Mascota </h1>
+                    </div>
+                    <div class="formulario">
+                        <div class="label">
+                            <h2></h2>
+                        </div>
+                    </div>
+                    <div class="formulario">
+                        <div class="label">
+                            <h2>Nombre:</h2>
+                        </div>
+                        <div class="label">
+                            <h2>Luna</h2>
+                        </div>
+                    </div>
+                    <div class="formulario">
+                        <div class="label">
+                            <h2>Raza:</h2>
+                        </div>
+                        <div class="label">
+                            <h2>Husky siberiano</h2>
+                        </div>
+                    </div>
+                    <div class="formulario">
+                        <div class="mascota-cuidados">
+                            <h2>Requerimientos y cuidados de la mascota: </h2>
+                        </div>
+                    </div>
+                    <div class="formulario">
+                        <div class="label">
+                            <h2>*Alimentación de calidad</h2>
+                        </div>
+                    </div>
+                    <div class="formulario">
+                        <div class="label">
+                            <h2>*Edcuación animal</h2>
+                        </div>
+                    </div>
+                    <div class="formulario">
+                        <div class="label">
+                            <h2>*higiene de la mascota</h2>
+                        </div>
+                    </div>
+                    <div class="formulario">
+                        <div class="label">
+                            <h2>*paseos y actividad fisica</h2>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div> <img class="foto-cliente" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFwU6TWwCXaFxsXG_ApAsttPUgIm1KwLGX_LSl1TSIqqMKHBZSz7cbjE7WT4RO8elv960&usqp=CAU" alt="Fotografia del cliente"> </div>
+        </section>
+        </div>
+        <div id="stc-pie">
+            <div class="pie">
+                <div class="pie-imagen"> <img src="img/logo.png" alt="Logo"> </div>
+                <p>Clínica veterinaria Moka @2022</p>
+            </div>
+        </div>
+        <div id="stc-final">
+            <div>
+                <p>Diseñado por Innovatech</p>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+        <script>
+            function myFunction(pIdCont) {
+                let tempContenido = document.getElementById(pIdCont);
+                if (tempContenido.className == "opcionesMenu") {
+                    tempContenido.className = "opcionesMenu show";
+                } else {
+                    tempContenido.className = "opcionesMenu";
+                }
+
+            }
+        </script>
+</body>
+
+</html>

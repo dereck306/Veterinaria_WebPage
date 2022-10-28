@@ -1,0 +1,62 @@
+#stc-final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 4px;
+}
+
+#stc-final p {
+    font-size: 15px;
+    color: white;
+}
+
+#stc-pie {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #56a081;
+    margin-top: 20px;
+}
+
+#stc-pie .pie {
+    position: relative;
+    width: 500px;
+    align-items: center;
+    text-align: center;
+    padding: 26px 0;
+}
+
+#stc-pie .pie p {
+    font-size: 20px;
+}
+
+#stc-pie .redes {
+    padding-top: 2%;
+}
+
+#stc-pie .redes a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#stc-pie .redes a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#stc-pie .pie-imagen {
+    position: absolute;
+    width: 120px;
+    top: 0;
+    left: 0;
+}
+
+#stc-pie .pie-imagen img {
+    width: 100%;
+}

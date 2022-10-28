@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.slider {
+    /*width: 100%;
+    height: 800px;*/
+    width: 1440px;
+    height: 511px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    z-index: 0;
+}
+
+#slideImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.overlay {
+    /*El overlay pone el color oscuro si cambian el tamaño del contenedor cambiarlo igual al overlay*/
+    margin-top: 80px;
+    width: 1440px;
+    height: 511px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    position: absolute;
+    top: 0;
+}

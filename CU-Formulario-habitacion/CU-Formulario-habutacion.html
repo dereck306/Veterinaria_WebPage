@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/estilos-btn.css">
+    <link rel="stylesheet" href="css/estilos_slider.css" type="text/css">
+    <link rel="stylesheet" href="css/estilos_header.css" type="text/css">
+    <link rel="stylesheet" href="css/estilos_Ranking.css" type="text/css">
+    <link rel="stylesheet" href="css/footer-estilo.css" type="text/css">
+    <link rel="stylesheet" href="css/inputsReset.css" type="text/css">
+    <link rel="stylesheet" href="css/formReserva.css" type="text/css">
+    <link rel="stylesheet" href="css/pagina-principal.css" type="text/css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="imageHeader"> <img class="logoHeader" src="imgs/LOGO_1_PNG.png" /></a>
+        </div>
+
+        <h1> Cliente </h1>
+
+        <button type="button" class="cerrarSesion"><a class="pSesion" href="../CU-Iniciar-sesion/iniciarsesion_usuario.html">Cerrar sesión</a></button>
+
+    </header>
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <nav class="menuVertical">
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorcli')" class="botonMenu">Cliente</button>
+                    <div id="miNavegadorcli" class="opcionesMenu">
+                        <a href="../CU-Perfil-cliente/Pagina_Inicial _Cliente.html">Perfil cliente</a>
+                        <a href="../Registrar Mascota/registrar-Mascota.html">Registrar mascotas</a>
+                        <a href="../CU - Listar-Citas/listar-citas.html">Listar cita</a>
+                        <a href="../CU - ListarMascotas - RegObservaciones - RegCitaMedica/registro-Citas-Medicas.html">Reservar cita médica</a>
+                        <a href="../Listar Reservaciones de Hotel/listar-reservacion-hotel.html">Lista habitación de hotel</a>
+                        <a href="CU-Formulario-habutacion.html" class="active">Reservar habitaciones<br>de hotel</a>
+                        <a href="../CU-Registrar-pagos/registrar-pagos.html">Hacer pagos</a>
+                        <a href="../CU - Listar-Tarjetas/listar-tarjetas.html">Listar metodos de pagos</a>
+                        <a href="../CU - Calificar-medico/calificar-medico.html">Calificación Veterinario</a>
+                        <a href="../CU - ListarMascotas - RegObservaciones - RegCitaMedica/listar-mascotas.html">Listar mascotas</a>
+                        <a href="../Perfil Mascota/perfil-mascota.html">Visualizar perfil mascota</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="contenidoHabitacion">
+            <form class="formularioReserva" name="miFormulario" id="miFormulario">
+                <fieldset>
+
+                    <legend>Reservar una estancia en el hotel</legend>
+                    <span id="msg"></span>
+                    <div class="flexContent">
+                        <label for="pHabitacion">Tipo de habitacion:</label>
+                        <select id="pHabitacion" name="pHabitacion" class="casillas_formulario">
+        <option value="0" disabled selected>---- SELECCIONE UNA OPCIÓN ----</option>
+        <option value="Normal">NORMAL</option>
+        <option value="Mini Deluxe">MINI DELUXE</option>
+        <option value="Grande Deluxe">GRANDE DELUXE</option>
+      </select>
+                    </div>
+                    <div class="flexContent">
+                        <label for="pEspecie">Tipo de especie*</label>
+                        <input class="casillas_formulario" type="text" name="pEspecie" id="pEspecie" />
+                    </div>
+                    <div class="flexContent">
+                        <label for="pRaza">Tipo de raza*</label>
+                        <input class="casillas_formulario" type="text" name="pRaza" id="pRaza" />
+                    </div>
+                    <div class="flexContent">
+                        <label for="fechaEn">Fecha Entrada:</label>
+                        <input class="casillas_formulario" type="date" id="fechaEn" name="fechaEn">
+                    </div>
+                    <div class="flexContent">
+                        <label for="fechaSa">Fecha Saliada:</label>
+                        <input class="casillas_formulario" type="date" id="fechaSa" name="fechaSa">
+                    </div>
+                    <div>
+                        <label class="comentarioFormulario" for="pComentario">Observaciones/Cuidados especiales de la mascota*</label>
+                        <br />
+                        <textarea name="pComentario" id="pComentario" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <input class="botonEnviar" type="buttom" id="submit" value="Enviar" onClick="validateForm('miFormulario')">
+                    <a class="botonRegresar" href="Pagina_Inicial _Cliente.html">Regresar</a>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <div id="stc-pie">
+        <div class="pie">
+            <div class="pie-imagen"> <img src="imgs/LOGO_1_PNG.png" alt="Logo"> </div>
+            <p>Clínica veterinaria Moka @2022</p>
+        </div>
+    </div>
+    <div id="stc-final">
+        <div>
+            <p>Diseñado por Innovatech</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/servicio-general.js" type="text/javascript"></script>
+    <script src="js/formReset.js" type="text/javascript"></script>
+    <script>
+        function myFunction(pIdCont) {
+            let tempContenido = document.getElementById(pIdCont);
+            if (tempContenido.className == "opcionesMenu") {
+                tempContenido.className = "opcionesMenu show";
+            } else {
+                tempContenido.className = "opcionesMenu";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

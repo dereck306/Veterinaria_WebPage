@@ -1,0 +1,165 @@
+.cuerpo {
+    padding-top: 50px;
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.animal-registrado {
+    padding-top: 10px;
+    display: flex;
+}
+
+.animal-registrado input {
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.container-switch {
+    margin: 0 30px;
+    margin-top: 20px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    margin: 0 10px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 5px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+input:checked+.slider {
+    background-color: #0d0a3f;
+}
+
+input:checked+.slider::before {
+    transform: translateX(10px);
+}
+
+p {
+    padding-top: 15px;
+}
+
+.search {
+    padding-top: 15px;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.search input {
+    margin: 0 15px;
+    border: 1px solid black;
+    width: 300px;
+    height: 30px;
+    font-size: 10pt;
+    float: left;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.datos-usuario {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.datos-usuario p {
+    margin: 0 30px;
+}
+
+.datos {
+    margin-top: 30px;
+}
+
+.foto {
+    margin: 0 80px;
+    width: 150px;
+    height: 180px;
+}
+
+#listado-mascotas {
+    margin: auto;
+    width: 700px;
+}
+
+table {
+    background-color: rgb(168, 164, 164);
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+tr:hover td {
+    background-color: azure;
+}
+
+.botones {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.botones input {
+    background-color: black;
+    color: #fff;
+    margin: 0 100px;
+    width: 110px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.botones input:hover {
+    background-color: #ddd;
+    border: none;
+    color: black;
+}

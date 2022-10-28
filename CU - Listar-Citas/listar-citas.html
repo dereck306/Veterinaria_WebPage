@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/estilos-btn.css">
+    <link rel="stylesheet" href="css/tablas.css">
+    <link rel="stylesheet" href="css/pagina-principal.css">
+    <title>Listar-citas</title>
+</head>
+
+
+<body>
+    <header class="header">
+
+        <div class="imageHeader"> <img class="logoHeader" src="imgs/LOGO_1_PNG.png" /></a>
+        </div>
+
+        <h1 class="cliente"> Cliente </h1>
+
+        <button type="button" class="btn-logout"><a href="../CU-Iniciar-sesion/iniciarsesion_usuario.html">Cerrar sesión</a></button>
+
+    </header>
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <nav class="menuVertical">
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorcli')" class="botonMenu">Cliente</button>
+                    <div id="miNavegadorcli" class="opcionesMenu">
+                        <a href="../CU-Perfil-cliente/Pagina_Inicial _Cliente.html">Perfil cliente</a>
+                        <a href="../Registrar Mascota/registrar-Mascota.html">Registrar mascotas</a>
+                        <a href="listar-citas.html" class="active">Listar cita</a>
+                        <a href="../CU - ListarMascotas - RegObservaciones - RegCitaMedica/registro-Citas-Medicas.html">Reservar cita médica</a>
+                        <a href="../Listar Reservaciones de Hotel/listar-reservacion-hotel.html">Lista habitación de hotel</a>
+                        <a href="../CU-Formulario-habitacion/CU-Formulario-habutacion.html">Reservar habitaciones<br>de hotel</a>
+                        <a href="../CU-Registrar-pagos/registrar-pagos.html">Hacer pagos</a>
+                        <a href="../CU - Listar-Tarjetas/listar-tarjetas.html">Listar metodos de pagos</a>
+                        <a href="../CU - Calificar-medico/calificar-medico.html">Calificación Veterinario</a>
+                        <a href="../CU - ListarMascotas - RegObservaciones - RegCitaMedica/listar-mascotas.html">Listar mascotas</a>
+                        <a href="../Perfil Mascota/perfil-mascota.html">Visualizar perfil mascota</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <section class="admin-usuarios">
+                <div class='menu-derecho'>
+                    <!--<div class="header-derecho">
+                <h2>
+                    Porfavor hacer click generar reporte
+                </h2>
+            </div>-->
+                    <form>
+                        <!--<div class="formulario">
+                    <div class="label">
+                        <label for="nombre ">Nombre</label>
+                        <select id="nombre ">
+                            <option value=" ">--Seleccione el primer nombre</option>
+                            <option value="carlos ">carlos</option>
+                            <option value="maria ">Maria</option>
+                            <option value="manuel ">Manuel</option>   
+                        </select>
+                    </div>
+                    <div class="label">
+                        <label for="apellidos ">Apellidos</label>
+                        <select id="apellidos ">
+                        <option value=" ">--Seleccione los apellidos</option>
+                        <option value="arias ">Arias Marin</option>
+                        <option value="salas ">Salas Calvo</option>
+                        <option value="rojas ">Rojas Mora</option>   
+                    </select>
+                    </div>
+                </div>-->
+
+
+                    </form>
+                    <div id="lista">
+                        <h1 class="titulo">Listar citas</h1>
+                    </div>
+
+                    <table id="tbl-tabla" class="tbl-info">
+                        <thead>
+                            <tr>
+                                <th><label for="txt-filtro">Filtro:</label> <input type="text" id="txt-filtro"></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th><button type="button" id="btn-agregar" class="btn-agregar"><a href="../CU - ListarMascotas - RegObservaciones - RegCitaMedica/registro-Citas-Medicas.html">Agregar</a></button>
+                            </tr>
+                            <tr>
+                                <th>Nombre del cliente</th>
+                                <th>Nombre de mascota</th>
+                                <th>Nombre del medico</th>
+                                <th>Fecha</th>
+                                <th>Hora</th>
+                                <th>Sede</th>
+                                <th></th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+
+                    </table>
+
+
+                </div>
+
+
+
+            </section>
+            <section class="espacio-citas-admin">
+
+            </section>
+        </div>
+    </section>
+    <section id="stc-pie">
+
+        <div class="pie">
+            <div class="pie-imagen">
+                <img src="imgs/LOGO_1_PNG.png" alt="Logo">
+            </div>
+            <p>Clínica veterinaria Moka @2022</p>
+        </div>
+
+    </section>
+    <section id="stc-final">
+        <div>
+            <p>Diseñado por Innovatech</p>
+        </div>
+    </section>
+    <script>
+        function myFunction(pIdCont) {
+            let tempContenido = document.getElementById(pIdCont);
+            if (tempContenido.className == "opcionesMenu") {
+                tempContenido.className = "opcionesMenu show";
+            } else {
+                tempContenido.className = "opcionesMenu";
+            }
+
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/servicio-general.js"></script>
+    <script src="js/listar-citas.js"></script>
+</body>
+
+</html>

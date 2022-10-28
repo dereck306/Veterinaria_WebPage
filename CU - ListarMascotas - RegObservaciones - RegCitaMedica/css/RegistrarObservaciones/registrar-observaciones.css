@@ -1,0 +1,111 @@
+.formulario-Observaciones {
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.formulario-Observaciones h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 15px;
+    display: flex;
+}
+
+#inpDias {
+    width: 30px;
+    margin-left: 5px;
+}
+
+.container-switch {
+    margin: 0 30px;
+    margin-top: 10px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    margin: 0 10px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 5px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+input:checked+.slider {
+    background-color: #0d0a3f;
+}
+
+input:checked+.slider::before {
+    transform: translateX(10px);
+}
+
+.container input {
+    margin-left: 5px;
+    width: 150px;
+    height: 20px;
+    margin-bottom: 12px;
+}
+
+#inpDiagnostico {
+    margin-top: 15px;
+    width: 400px;
+    height: 150px;
+}
+
+.botones {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.botones input {
+    background-color: black;
+    color: #fff;
+    margin: 0 100px;
+    width: 110px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.botones input:hover {
+    background-color: #ddd;
+    border: none;
+    color: black;
+}
+
+.container input,
+#inpDiagnostico {
+    border: 1px solid black;
+}

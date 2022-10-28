@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+.resaltar-rojo {
+    /*border: solid 1x red;*/
+    box-shadow: 3px 3px red;
+}

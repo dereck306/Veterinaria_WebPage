@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Css/estilos_header.css">
+    <link rel="stylesheet" href="Css/lista-estilo.css">
+    <link rel="stylesheet" href="Css/footer-estilo4.css">
+    <link rel="stylesheet" href="Css/estilos-btn.css">
+    <link rel="stylesheet" href="Css/paginaInicial.css">
+    <link rel="stylesheet" href="Css/paginaInicial2.css">
+
+
+
+    <title>Listar Reservaciones de Hotel</title>
+
+</head>
+
+<body>
+
+    <!-- Header start -->
+
+    <header class="header">
+
+        <div class="imageHeader"> <img class="logoHeader" src="img/logo.png" /></a>
+        </div>
+
+        <h1> Cliente </h1>
+
+        <button type="button" class="btn-logout"><a href="../CU-Iniciar-sesion/iniciarsesion_usuario.html">Cerrar sesión</a></button>
+
+    </header>
+
+    <!-- Header end -->
+
+    <!-- lista start -->
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <nav class="menuVertical">
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorcli')" class="botonMenu">Cliente</button>
+                    <div id="miNavegadorcli" class="opcionesMenu">
+                        <a href="../CU-Perfil-cliente/Pagina_Inicial _Cliente.html">Perfil cliente</a>
+                        <a href="../Registrar Mascota/registrar-Mascota.html">Registrar mascotas</a>
+                        <a href="../CU - Listar-Citas/listar-citas.html">Listar cita</a>
+                        <a href="../CU - ListarMascotas - RegObservaciones - RegCitaMedica/registro-Citas-Medicas.html">Reservar cita médica</a>
+                        <a href="listar-reservacion-hotel.html" class="active">Lista habitación de hotel</a>
+                        <a href="../CU-Formulario-habitacion/CU-Formulario-habutacion.html">Reservar habitaciones<br>de hotel</a>
+                        <a href="../CU-Registrar-pagos/registrar-pagos.html">Hacer pagos</a>
+                        <a href="../CU - Listar-Tarjetas/listar-tarjetas.html">Listar metodos de pagos</a>
+                        <a href="../CU - Calificar-medico/calificar-medico.html">Calificación Veterinario</a>
+                        <a href="../CU - ListarMascotas - RegObservaciones - RegCitaMedica/listar-mascotas.html">Listar mascotas</a>
+                        <a href="../Perfil Mascota/perfil-mascota.html">Visualizar perfil mascota</a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+        <div>
+            <div id="lista">
+                <h1 class="titulo">Lista de Reservaciones de Hotel</h1>
+            </div>
+
+            <section id="stc-tabla">
+                <table id="tbl-usuarios" class="tbl-info">
+                    <thead>
+                        <tr>
+                            <th><label for="txt-filtro">Filtro</label>
+                                <input type="text" id="txt-filtro"></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+
+                            <th><button type="button" id="btn-agregar" class="btn-agregar"><a href="../CU-Formulario-habitacion/CU-Formulario-habutacion.html">Agregar</a></button></th>
+                        </tr>
+                        <tr>
+                            <th>Tipo de habitacion</th>
+                            <th>Tipo de Especie</th>
+                            <th>Tipo de Raza</th>
+                            <th>Fecha Entrada</th>
+                            <th>Fecha Salida</th>
+                            <th>Cuidados Especiales</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- lista end -->
+
+            <!-- Boton start -->
+
+            <div id="Boton">
+                <button type="button" class="salir"><a href="../CU-Formulario-habitacion/CU-Formulario-habutacion.html">Volver al menu</a></button>
+            </div>
+        </div>
+    </section>
+    <!-- Boton end -->
+
+    <!-- Footer start -->
+    <div id="stc-pie">
+        <div class="pie">
+            <div class="pie-imagen"> <img src="img/logo.png" alt="Logo"> </div>
+            <p>Clínica veterinaria Moka @2022</p>
+        </div>
+    </div>
+    <div id="stc-final">
+        <div>
+            <p>Diseñado por Innovatech</p>
+        </div>
+    </div>
+
+    <!-- Footer end -->
+
+    <!-- JS start -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="Js/servicio-general.js"></script>
+    <script src="Js/listar-reservaciones.js"></script>
+
+    <!-- JS end -->
+    <script>
+        function myFunction(pIdCont) {
+            let tempContenido = document.getElementById(pIdCont);
+            if (tempContenido.className == "opcionesMenu") {
+                tempContenido.className = "opcionesMenu show";
+            } else {
+                tempContenido.className = "opcionesMenu";
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>

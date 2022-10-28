@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos_header.css">
+    <link rel="stylesheet" href="css/estilos-btn.css">
+    <link rel="stylesheet" href="css/estilos-btn.css">
+    <link rel="stylesheet" href="css/paginaInicial.css">
+    <link rel="stylesheet" href="css/RegistrarCitas/formReserva.css">
+    <link rel="stylesheet" href="css/RegistrarCitas/registro-citas-medicas.css">
+    <link rel="stylesheet" href="css/footer-estilo2.css">
+
+
+    <title>Cliente - Registrar Mascotas</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="imageHeader"> <img class="logoHeader" src="img/logo.png" /></a>
+        </div>
+
+        <h1> Cliente </h1>
+
+        <button type="button" class="btn-logout"><a href="../CU-Iniciar-sesion/iniciarsesion_usuario.html">Cerrar sesión</a></button>
+
+    </header>
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <nav class="menuVertical">
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorcli')" class="botonMenu">Cliente</button>
+                    <div id="miNavegadorcli" class="opcionesMenu">
+                        <a href="../CU-Perfil-cliente/Pagina_Inicial _Cliente.html" >Perfil cliente</a>
+                        <a href="../Registrar Mascota/registrar-Mascota.html">Registrar mascotas</a>
+                        <a href="../CU - Listar-Citas/listar-citas.html">Listar cita</a>
+                        <a href="registro-Citas-Medicas.html"class="active">Reservar cita médica</a>
+                        <a href="../Listar Reservaciones de Hotel/listar-reservacion-hotel.html">Lista habitación de hotel</a>
+                        <a href="../CU-Formulario-habitacion/CU-Formulario-habutacion.html">Reservar habitaciones<br>de hotel</a>
+                        <a href="../CU-Registrar-pagos/registrar-pagos.html">Hacer pagos</a>
+                        <a href="../CU - Listar-Tarjetas/listar-tarjetas.html">Listar metodos de pagos</a>
+                        <a href="../CU - Calificar-medico/calificar-medico.html">Calificación Veterinario</a>
+                        <a href="../CU - ListarMascotas - RegObservaciones - RegCitaMedica/listar-mascotas.html">Listar mascotas</a>
+                        <a href="../Perfil Mascota/perfil-mascota.html">Visualizar perfil mascota</a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+
+        <div class="contenidoHabitacion">
+            <form class="formularioReserva" name="miFormulario" onsubmit="return validateForm(this)" method="post" id="miFormulario">
+                <fieldset>
+
+                    <legend>Registrar una cita médica</legend>
+                    <span id="msg"></span>
+                    <div class="flexContent">
+                        <label for="sltDueno">Dueño de la mascota:</label>
+                        <select id="sltDueno" name="inpDueno" class="casillas_formulario">
+                            <option value="0" disabled selected>---- SELECCIONE UNA OPCIÓN ----</option>
+                            <option value="Andres Montiel">Andres Montiel</option>
+                            <option value="Cristina Aguilar">Cristina Aguilar</option>
+                            <option value="Roger Guzman">Roger Guzman</option>
+                            <option value="Emmanuel Hernandez">Emmanuel Hernandez</option>
+                        </select>
+                    </div>
+                    <div class="flexContent">
+                        <label for="inp">Mascota:</label>
+                        <select id="sltMascota" name="inpDueno" class="casillas_formulario">
+                            <option value="0" disabled selected>---- SELECCIONE UNA OPCIÓN ----</option>
+                            <option value="Doki">Doki</option>
+                            <option value="Bola de Algodon">Bola de Algodon</option>
+                            <option value="Copito">Copito</option>
+                            <option value="Tomas">Tomas</option>
+                        </select>
+                    </div>
+                    <div class="flexContent">
+                        <label for="inpFecha">Fecha de la cita:</label>
+                        <input class="casillas_formulario" type="date" id="inpFecha" name="inpFecha">
+                    </div>
+                    <div class="flexContent">
+                        <label for="inpHora">Hora de la cita:</label>
+                        <input class="casillas_formulario" type="time" id="inpHora" name="inpHora">
+                    </div>
+                    <div class="flexContent">
+                        <label for="sltSede">Sede:</label>
+                        <select id="sltSede" name="sltSede" class="casillas_formulario">
+                            <option value="0" disabled selected>---- SELECCIONE UNA OPCIÓN ----</option>
+                            <option value="San José">San José</option>
+                            <option value="Heredia">Heredia</option>
+                            <option value="Cartago">Cartago</option>
+                        </select>
+                    </div>
+                    <div class="flexContent">
+                        <label for="sltDoctor">Doctor:</label>
+                        <select id="sltDoctor" name="sltDoctor" class="casillas_formulario">
+                            <option value="0" disabled selected>---- SELECCIONE UNA OPCIÓN ----</option>
+                            <option value="Dr.Cristian">Dr.Cristian</option>
+                            <option value="Dra.Isabela">Dra.Isabela</option>
+                            <option value="Dr.Stone">Dr.Stone</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="comentarioFormulario" for="pComentario">Cuidados especiales de la mascota*</label>
+                        <br />
+                        <textarea name="pComentario" id="pComentario" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <input type="button" value="Guardar" id="btnGuardar">
+                    <a class="botonRegresar" href="../CU-Perfil-cliente/Pagina_Inicial _Cliente.html">Regresar</a>
+                </fieldset>
+            </form>
+        </div>
+
+    </section>
+    <section id="stc-pie">
+
+        <div class="pie">
+            <div class="pie-imagen">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <p>Clínica veterinaria Moka @2022</p>
+        </div>
+
+    </section>
+    <section id="stc-final">
+        <div>
+            <p>Diseñado por Innovatech</p>
+        </div>
+    </section>
+
+    <script src="HTTPS://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="js/RegistrarCitas/servicio-general-citas.js"></script>
+    <script src="js/RegistrarCitas/reservar-citas.js"></script>
+
+
+
+
+    <script>
+        function myFunction(pIdCont) {
+            let tempContenido = document.getElementById(pIdCont);
+            if (tempContenido.className == "opcionesMenu") {
+                tempContenido.className = "opcionesMenu show";
+            } else {
+                tempContenido.className = "opcionesMenu";
+            }
+
+        }
+    </script>
+</body>
+
+
+
+</html>

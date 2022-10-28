@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+.btn-logout {
+    width: 200.5px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    cursor: hand;
+    margin-right: 10px;
+}
+
+.btn-logout:hover {
+    font-weight: bold;
+}
+
+.nav-izquierdo nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F0F0F0;
+    margin-top: 25px;
+    border: black solid 2px;
+    width: 190px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.nav-izquierdo nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-izquierdo nav a:hover {
+    font-weight: bold;
+}
+
+.label-dropdown {
+    font-size: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    color: white;
+}
+
+.label-dropdown select {
+    margin-left: 2px;
+    font-size: 20px;
+}
+
+.formulario .label {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    /*border: red dotted 1px;*/
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+}
+
+.label input {
+    align-items: right;
+    font-size: 20px;
+}
+
+.formulario .label-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+    /*border: red dotted 1px;*/
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+}
+
+.label-2 input {
+    align-items: right;
+    font-size: 16px;
+}
+
+#desactivar {
+    width: 20px;
+    height: 20px;
+}
+
+.guardarborrar {
+    display: flex;
+    justify-content: space-around;
+    width: 860px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    /*border: red dotted 1px;*/
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.btn-acomodo {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    justify-content: space-around;
+}
+
+.formulario .label-3 {
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    /*border: red dotted 1px;*/
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+}
+
+#direccion {
+    width: 552px;
+    font-size: 20px;
+}
+
+.formulario .label {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    /*border: red dotted 1px;*/
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+}
+
+.label input {
+    align-items: right;
+    font-size: 16px;
+}

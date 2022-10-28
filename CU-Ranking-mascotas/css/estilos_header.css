@@ -1,0 +1,82 @@
+@charset "utf-8";
+body {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/*Estilos correspondiente al Header - Creado por Sofía Herrera H 8/7/2022*/
+
+.header {
+    padding-left: 25px;
+    /*desabilitado por carlos ortuño , para mover menu hacia la derecha,9/7/2022 */
+    /*padding-right: 25px;*/
+    display: flex;
+    background-color: #56a081;
+    justify-content: space-between;
+    align-items: center;
+    /*border-style: double;*/
+    /*desabilitado*/
+    height: 80px;
+    /*border: dotted 1px red;*/
+    /*cambio para fijar el header*/
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header h1 {
+    font-size: 20px;
+		color: white;}
+}
+
+.header nav {
+    width: 100%;
+    /*border: dotted 1px red;*/
+}
+
+.logoHeader {
+    width: fit-content;
+    /*por carlos ortuño , cambio para acomodar el logo, 9/7/2022 */
+    height: 80px;
+    padding: 4px;
+    /*desabilitado por carlos ortuño , para acomodar tamaño del log al a la altura del header*/
+    /*max-width: 400px;
+    min-width: 200px;*/
+}
+
+.navContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navContent a {
+    font-size: 20px;
+}
+
+.navContent li {
+    font-size: 16px;
+    list-style: none;
+    font-size: 16px;
+}
+
+.navContent li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    /*border: dotted 1px red;*/
+}
+
+.navContent li:hover a {
+    color: #003333;
+    background-color: #ffffff;
+}
+
+
+/*Estilos correspondiente al Header - Creado por Sofía Herrera H 8/7/2022*/
+
+
+/* CSS Document */
